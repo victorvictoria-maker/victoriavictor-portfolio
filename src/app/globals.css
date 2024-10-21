@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ATYP Font Faces */
+@font-face {
+  font-family: "Atyp";
+  src: url("/fonts/atyp-font-family/AtypDisplayTRIAL-Light-BF65727125c722b.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: light;
+}
+
+@font-face {
+  font-family: "Atyp";
+  src: url("/fonts/atyp-font-family/AtypDisplayTRIAL-Regular-BF65727125d566e.otf")
+    format("opentype");
+  /* url("/fonts/atyp-font-family/AtypTextTRIAL-Regular-BF65727125ea126.woff2")
+      format("woff2"),
+    url("/fonts/atyp-font-family/AtypTextTRIAL-Regular-BF65727125ea126.woff")
+      format("woff") 
+     */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Atyp";
+  src: url("/fonts/atyp-font-family/AtypDisplayTRIAL-Semibold-BF65727125c6fc9.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Moderat";
+  src: url("/fonts/Moderat-Condensed-Light.woff2") format("woff2"),
+    url("/fonts/Moderat-Condensed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Moderat";
+  src: url("/fonts/Moderat-Modo-Medium.woff2") format("woff2"),
+    url("/fonts/Moderat-Modo-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Moderat";
+  src: url("/fonts/Moderat-Condensed-Bold.woff2") format("woff2"),
+    url("/fonts/Moderat-Condensed-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+} */
+
+:root {
+  --background: #ffffff;
+  /* --foreground: #565656 ; */
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #171717;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* fonts */
+.font-atyp-normal {
+  font-family: "Atyp", sans-serif;
+  font-weight: 400;
+}
