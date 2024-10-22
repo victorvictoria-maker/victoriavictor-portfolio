@@ -14,22 +14,24 @@ const Navbar = () => {
 
   return (
     <nav className='px-4 lg:px-20 flex justify-between items-center py-6 border-b border-[#565656]'>
-      <Image
-        // className='dark:invert'
-        src='/images/logo.svg'
-        alt='Vickys Logo'
-        width={55}
-        height={48}
-        priority
-      />
+      <Link href='/'>
+        <Image
+          // className='dark:invert'
+          src='/images/logo.svg'
+          alt='Vickys Logo'
+          width={55}
+          height={48}
+          priority
+        />
+      </Link>
 
-      <ul className='hidden lg:flex gap-7 font-atyp '>
-        <Link href='/'>about me</Link>
-        <Link href='/'>projects</Link>
+      <ul className='hidden md:flex gap-7 font-atyp '>
+        <Link href='/about-me'>about me</Link>
+        <Link href='/projects'>projects</Link>
         <Link href='/'>contact me</Link>
       </ul>
 
-      <ul className='hidden lg:flex gap-3'>
+      <ul className='hidden md:flex gap-3'>
         <Link href='/'>
           <Image
             src='images/igIcon.svg'
@@ -65,7 +67,7 @@ const Navbar = () => {
       </ul>
 
       {/* Mobile Hamburger Icon */}
-      <div className='lg:hidden'>
+      <div className='md:hidden'>
         <button onClick={toggleMenu} className='text-3xl focus:outline-none'>
           {!isOpen ? <FiMenu /> : ""}
         </button>
@@ -73,7 +75,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed top-0 left-0 h-full bg-[#1f1e1e] z-20 transition-transform transform w-64 ${
+        className={`md:hidden fixed top-0 left-0 h-full bg-[#1f1e1e] z-20 transition-transform transform w-64 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -85,11 +87,11 @@ const Navbar = () => {
             <FiX />
           </button>
 
-          <ul className='lg:hidden flex flex-col  gap-7 font-atyp '>
-            <Link href='/' onClick={toggleMenu}>
+          <ul className='md:hidden flex flex-col  gap-7 font-atyp '>
+            <Link href='/about-me' onClick={toggleMenu}>
               about me
             </Link>
-            <Link href='/' onClick={toggleMenu}>
+            <Link href='/projects' onClick={toggleMenu}>
               projects
             </Link>
             <Link href='/' onClick={toggleMenu}>
@@ -97,7 +99,7 @@ const Navbar = () => {
             </Link>
           </ul>
 
-          <ul className='flex lg:hidden gap-3 mt-4'>
+          <ul className='flex md:hidden gap-3 mt-4'>
             <Link href='/'>
               <Image
                 src='images/igIcon.svg'

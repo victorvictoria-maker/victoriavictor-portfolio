@@ -72,7 +72,7 @@ export default function Home() {
                 <p className='font-light text-sm md:text-base'>
                   OluvictorMinistry
                 </p>
-                <p className='text-sm md:text-base'>Web Design</p>
+                <p className='text-sm md:text-base underline'>Check It Out</p>
               </div>
             </div>
             <div className='relative'>
@@ -85,7 +85,7 @@ export default function Home() {
               />
               <div className='absolute inset-x-5 md:inset-x-10 bottom-2 md:bottom-4 px-6 py-4 bg-[#1f1e1e] bg-opacity-95 text-white flex justify-between font-atyp'>
                 <p className='font-light text-sm md:text-base'>Care Connect</p>
-                <p className='text-sm md:text-base'>Web Design</p>
+                <p className='text-sm md:text-base underline'>Check It Out</p>
               </div>
             </div>
             <div className='relative'>
@@ -100,7 +100,7 @@ export default function Home() {
                 <p className='font-light text-sm md:text-base'>
                   Tuition by Flutterwave
                 </p>
-                <p className='text-sm md:text-base'>Web Design</p>
+                <p className='text-sm md:text-base underline'>Check It Out</p>
               </div>
             </div>
 
@@ -114,7 +114,7 @@ export default function Home() {
               />
               <div className='absolute inset-x-5 md:inset-x-10 bottom-2 md:bottom-4 px-6 py-4 bg-[#1f1e1e] bg-opacity-95 text-white flex justify-between font-atyp'>
                 <p className='font-light text-sm md:text-base'>Edulink</p>
-                <p className='text-sm md:text-base'>Web Design</p>
+                <p className='text-sm md:text-base underline'>Check It Out</p>
               </div>
             </div>
             <div className='relative'>
@@ -129,22 +129,22 @@ export default function Home() {
                 <p className='font-light text-sm md:text-base'>
                   OluvictorMinistry
                 </p>
-                <p className='text-sm md:text-base'>Web Design</p>
+                <p className='text-sm md:text-base underline'>Check It Out</p>
               </div>
             </div>
             <div className='relative'>
               <Image
-                src='/images/tuition1.png'
-                alt='Tuition Landing Page'
+                src='/images/coalition1.png'
+                alt='Coalition Project'
                 width={729}
                 height={468}
                 className='w-full object-cover'
               />
               <div className='absolute inset-x-5 md:inset-x-10 bottom-2 md:bottom-4 px-6 py-4 bg-[#1f1e1e] bg-opacity-95 text-white flex justify-between font-atyp'>
                 <p className='font-light text-sm md:text-base'>
-                  Tuition by Flutterwave
+                  Coalition Project
                 </p>
-                <p className='text-sm md:text-base'>Web Design</p>
+                <p className='text-sm md:text-base underline'>Check It Out</p>
               </div>
             </div>
           </div>
