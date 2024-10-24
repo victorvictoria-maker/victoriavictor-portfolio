@@ -63,6 +63,22 @@ const page = () => {
 
             <div className='relative'>
               <Image
+                src='/images/mosesafolabi.png'
+                alt='Moses Portfolio Landing Page'
+                width={729}
+                height={468}
+                className='w-full object-cover'
+              />
+              <div className='absolute inset-x-5 md:inset-x-10 bottom-2 md:bottom-4 px-6 py-4 bg-[#1f1e1e] bg-opacity-95 text-white flex justify-between font-atyp'>
+                <p className='font-light text-sm md:text-base'>
+                  Moses&apos; Portfolio
+                </p>
+                <p className='text-sm md:text-base underline'>Check It Out</p>
+              </div>
+            </div>
+
+            <div className='relative'>
+              <Image
                 src='/images/edulink1.png'
                 alt='Tuition Landing Page'
                 width={729}
@@ -76,15 +92,15 @@ const page = () => {
             </div>
             <div className='relative'>
               <Image
-                src='/images/oluvictor1.png'
-                alt='Oluvictor Ministry Landing Page'
+                src='/images/githubproject1.png'
+                alt='Github Project Landing Page'
                 width={729}
                 height={468}
                 className='w-full object-cover'
               />
               <div className='absolute inset-x-5 md:inset-x-10 bottom-2 md:bottom-4 px-6 py-4 bg-[#1f1e1e] bg-opacity-95 text-white flex justify-between font-atyp'>
                 <p className='font-light text-sm md:text-base'>
-                  OluvictorMinistry
+                  Github Project
                 </p>
                 <p className='text-sm md:text-base underline'>Check It Out</p>
               </div>

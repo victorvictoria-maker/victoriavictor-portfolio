@@ -1,4 +1,11 @@
+"use client";
+
 const CreateSomething = () => {
+  const sendMail = () => {
+    window.location.href =
+      "mailto:victorvictoria0001@gmail.com?subject=HelloVicky&body=I wanted to reach out!";
+  };
+
   return (
     <section className='flex flex-col items-center mt-16 md:mt-24'>
       <div className='max-w-[736px] flex flex-col items-center justify-center '>
@@ -9,7 +16,10 @@ const CreateSomething = () => {
           Whether you&apos;re seeking a developer or just looking to connect,
           feel free to reach out.
         </p>
-        <button className='border rounded-full py-4 px-16 border-[#C2C2C2]'>
+        <button
+          className='border rounded-full py-4 px-16 border-[#C2C2C2]'
+          onClick={sendMail}
+        >
           Let&apos;s connect
         </button>
       </div>

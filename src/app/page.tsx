@@ -1,5 +1,6 @@
 import CreateSomething from "@/components/CreateSomething";
 import Footer from "@/components/Footer";
+import SelectedWorks from "@/components/landingpage/SelectedWorks";
 import Skills from "@/components/landingpage/Skills";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
@@ -28,9 +29,11 @@ export default function Home() {
               A passionate developer crafting innovative solutions for the
               digital world.
             </h1>
-            <button className='border rounded-full py-2 md:py-4 px-8 md:px-16 border-[#C2C2C2]'>
-              See my works
-            </button>
+            <Link href='/projects'>
+              <button className='border rounded-full py-2 md:py-4 px-8 md:px-16 border-[#C2C2C2]'>
+                See my works
+              </button>
+            </Link>
           </div>
 
           <Skills />
@@ -51,104 +54,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section className='mt-16 md:mt-24'>
-          <div className='font-atyp'>
-            <h2 className='text-3xl mb-2'>Selected Works</h2>
-            <p className='text-justify'>
-              I enjoy applying my knowledge and skills to build, explore new
-              technologies, and learn through hands-on experience.
-            </p>
-          </div>
-          <div className='grid grid-cols-1 lg:grid-cols-2 mt-8 md:gap-x-8 gap-y-8 md:gap-y-12'>
-            <div className='relative'>
-              <Image
-                src='/images/oluvictor1.png'
-                alt='Oluvictor Ministry Landing Page'
-                width={729}
-                height={468}
-                className='w-full object-cover'
-              />
-              <div className='absolute inset-x-5 md:inset-x-10 bottom-2 md:bottom-4 px-6 py-4 bg-[#1f1e1e] bg-opacity-95 text-white flex justify-between font-atyp'>
-                <p className='font-light text-sm md:text-base'>
-                  OluvictorMinistry
-                </p>
-                <p className='text-sm md:text-base underline'>Check It Out</p>
-              </div>
-            </div>
-            <div className='relative'>
-              <Image
-                src='/images/careconnect1.png'
-                alt='Tuition Landing Page'
-                width={729}
-                height={468}
-                className='w-full object-cover'
-              />
-              <div className='absolute inset-x-5 md:inset-x-10 bottom-2 md:bottom-4 px-6 py-4 bg-[#1f1e1e] bg-opacity-95 text-white flex justify-between font-atyp'>
-                <p className='font-light text-sm md:text-base'>Care Connect</p>
-                <p className='text-sm md:text-base underline'>Check It Out</p>
-              </div>
-            </div>
-            <div className='relative'>
-              <Image
-                src='/images/tuition1.png'
-                alt='Tuition Landing Page'
-                width={729}
-                height={468}
-                className='w-full object-cover'
-              />
-              <div className='absolute inset-x-5 md:inset-x-10 bottom-2 md:bottom-4 px-6 py-4 bg-[#1f1e1e] bg-opacity-95 text-white flex justify-between font-atyp'>
-                <p className='font-light text-sm md:text-base'>
-                  Tuition by Flutterwave
-                </p>
-                <p className='text-sm md:text-base underline'>Check It Out</p>
-              </div>
-            </div>
-
-            <div className='relative'>
-              <Image
-                src='/images/edulink1.png'
-                alt='Tuition Landing Page'
-                width={729}
-                height={468}
-                className='w-full object-cover'
-              />
-              <div className='absolute inset-x-5 md:inset-x-10 bottom-2 md:bottom-4 px-6 py-4 bg-[#1f1e1e] bg-opacity-95 text-white flex justify-between font-atyp'>
-                <p className='font-light text-sm md:text-base'>Edulink</p>
-                <p className='text-sm md:text-base underline'>Check It Out</p>
-              </div>
-            </div>
-            <div className='relative'>
-              <Image
-                src='/images/oluvictor1.png'
-                alt='Oluvictor Ministry Landing Page'
-                width={729}
-                height={468}
-                className='w-full object-cover'
-              />
-              <div className='absolute inset-x-5 md:inset-x-10 bottom-2 md:bottom-4 px-6 py-4 bg-[#1f1e1e] bg-opacity-95 text-white flex justify-between font-atyp'>
-                <p className='font-light text-sm md:text-base'>
-                  OluvictorMinistry
-                </p>
-                <p className='text-sm md:text-base underline'>Check It Out</p>
-              </div>
-            </div>
-            <div className='relative'>
-              <Image
-                src='/images/coalition1.png'
-                alt='Coalition Project'
-                width={729}
-                height={468}
-                className='w-full object-cover'
-              />
-              <div className='absolute inset-x-5 md:inset-x-10 bottom-2 md:bottom-4 px-6 py-4 bg-[#1f1e1e] bg-opacity-95 text-white flex justify-between font-atyp'>
-                <p className='font-light text-sm md:text-base'>
-                  Coalition Project
-                </p>
-                <p className='text-sm md:text-base underline'>Check It Out</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <SelectedWorks />
 
         <CreateSomething />
       </main>
